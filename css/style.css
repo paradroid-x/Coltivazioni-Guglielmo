@@ -1,0 +1,46 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(img/pattern.jpg);
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: 100%;
+}
+
+#carousel-container {
+    padding: 0%;    /* altrimenti esce brutto */
+}
+
+#nav {
+    background-color: #3f963f !important;
+    color: white !important;  
+}
+
+#nav-brand {
+    color: white !important;  
+}
+
+#nav-link {
+    text-decoration: none;
+    background-color: #3f963f;
+    color: white; 
+}
+
+#demo {
+    height: auto;
+    width: auto;
+}
+
+#main-text {
+    background-color: #3f963f;
+    color: white;
+}
+
+#btn {
+    align-items: center !important;
+    background-color: white !important;
+    color: #3f963f !important;
+    border-color: #3f963f !important;
+}
+
+/* template per i commenti */
+/*  */
