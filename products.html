@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Pagina Principale</title>
+        <!-- METADATI -->
+        <meta name="" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS e BOOTSTRAP -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    
+    <body>
+    
+    <!----------NAVBAR---------->
+    <header>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <a id="nav-brand" class="navbar-brand" href="index.html">
+                <img src="" width="30" height="30" id="logo" alt="logo">    <!-- il logo va messo apposto con le dimensioni giuste-->
+                Coltivazioni Guglielmo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">                
+                <a class="nav-item nav-link" id="nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link disabled" id="nav-link" href="#">Prodotti</a>
+                <a class="nav-item nav-link" id="nav-link" href="contacts.html">Contatti</a>
+              </div>
+            </div>
+        </nav>
+    </header>
+      
+    <div id="main-text">
+        <!----------MAIN---------->
+        <select onchange="mostraProdotto(this.value)" class="form-select">
+            <option value="">Scegli un prodotto</option>
+            <option value="0">Fragole</option>
+            <option value="1">Lamponi</option>
+            <option value="2">Mirtilli</option>
+        </select>
+        
+        <div id="body-wrapper" class="container">
+
+        </div>
+
+    </div>
+
+    </body>
+
+    <!-- MICRODATI -->
+    <script type="application/ld+json">
+
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
