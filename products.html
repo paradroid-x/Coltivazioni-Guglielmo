@@ -26,27 +26,43 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">                
                 <a class="nav-item nav-link" id="nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" id="nav-link" href="bio.html">Bio</a>
                 <a class="nav-item nav-link disabled" id="nav-link" href="#">Prodotti</a>
                 <a class="nav-item nav-link" id="nav-link" href="contacts.html">Contatti</a>
+                <a class="nav-item nav-link" id="nav-link" href="photos.html">Foto</a>
               </div>
             </div>
         </nav>
     </header>
       
-    <div id="main-text">
-        <!----------MAIN---------->
+    <br>
+
+    <div class="container" id="text-wrapper">
+        <h3>piccola descrizione</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor assumenda est atque vitae aperiam molestiae facilis eum nihil in illum iure cum illo libero, iste possimus repudiandae sit sapiente quasi!
+    </div>
+
+    <!----------mostra disponibilità---------->
+    <div id="text-wrapper" class="container" style="border: 0px;">
         <select onchange="mostraProdotto(this.value)" class="form-select">
             <option value="">Scegli un prodotto</option>
             <option value="0">Fragole</option>
             <option value="1">Lamponi</option>
             <option value="2">Mirtilli</option>
         </select>
-        
-        <div id="body-wrapper" class="container">
-
-        </div>
-
     </div>
+    
+    <div id="text-wrapper" class="container">
+        <h1 id="prd-ttl"></h1>
+        <img id="prd-img" alt="prodotto">
+        <p id="prd-dsc"></p>
+    </div>
+    
+    <footer>
+        <div class="container">
+            qua ci vanno le informazioni di contatto
+        </div>
+    </footer> 
 
     </body>
 
