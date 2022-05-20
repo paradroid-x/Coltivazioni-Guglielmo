@@ -1,17 +1,11 @@
+/* css per tutto */
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(img/);
-    background-repeat: repeat;
-    background-position: left top;
-    background-size: 100%;
-}
-
-#carousel-container {
-    padding: 0%;    /* altrimenti esce brutto */
 }
 
 #nav {
-    background-color: #3f963f !important;
+    background-color: darkgreen !important;
     color: white !important;  
 }
 
@@ -21,8 +15,41 @@ body {
 
 #nav-link {
     text-decoration: none;
-    background-color: #3f963f;
+    background-color: darkgreen;
     color: white; 
+}
+
+#text-wrapper {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+}
+
+#text-wrapper > #side-text {
+    text-align: left;
+}
+
+#cnt {
+    all: unset !important;
+    color: inherit;
+}
+
+footer {
+    background-color: darkgreen;
+    color: wheat;
+    background-image: url(img\pattern.jpg);
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: 100%;
+    opacity: 0.8;   
+}
+
+/* css solo per index.html */
+#carousel-container {
+    padding: 0%;    /* altrimenti esce brutto */
 }
 
 #demo {
@@ -30,17 +57,46 @@ body {
     width: auto;
 }
 
-#main-text {
-    background-color: #3f963f;
-    color: white;
+#shortcut {
+    margin-left: 0%;
+    color: wheat;
+    background-color: darkgreen;
 }
 
-#btn {
-    align-items: center !important;
-    background-color: white !important;
-    color: #3f963f !important;
-    border-color: #3f963f !important;
+#block-image-container {
+    padding: 2%;
+    width: 50%;
 }
+
+/* css solo per products.html */
+#form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#prd-img {
+    height: auto;
+    width: 100%;
+}
+
+
+/* css solo per photos.html */
+#ph-grid {
+    border: 1px solid darkgreen;
+    padding: 1%;
+}
+
+#ph-block{
+    margin-left: 0%;
+    padding: 0%;
+    height: 30%;
+    width: 30%;
+}
+
+
+
+
 
 /* template per i commenti */
 /*  */
