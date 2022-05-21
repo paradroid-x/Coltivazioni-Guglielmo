@@ -50,11 +50,14 @@ footer {
 /* css solo per index.html */
 #carousel-container {
     padding: 0%;    /* altrimenti esce brutto */
+    height: 100%;
+    width: 100%;
+
 }
 
 #demo {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
 }
 
 #shortcut {
