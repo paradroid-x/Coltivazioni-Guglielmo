@@ -5,8 +5,9 @@ body {
 }
 
 #nav {
-    background-color: darkgreen !important;
+    background-color: #466c5f !important;
     color: white !important;  
+    height: 7vh !important;
 }
 
 #nav-brand {
@@ -15,7 +16,7 @@ body {
 
 #nav-link {
     text-decoration: none;
-    background-color: darkgreen;
+    background-color: #466c5f;
     color: white; 
 }
 
@@ -24,8 +25,7 @@ body {
     padding-bottom: 1%;
     padding-left: 2%;
     padding-right: 2%;
-    color: darkgreen;
-    border: 1px solid darkgreen;
+    /*border: 1px solid #466c5f;*/ /*serve per il debugging*/
 }
 
 #text-wrapper > #side-text {
@@ -38,21 +38,23 @@ body {
 }
 
 footer {
-    background-color: darkgreen;
-    color: wheat;
+    background-color: #466c5f;
+    color: white;
     background-image: url(img\pattern.jpg);
     background-repeat: repeat;
     background-position: left top;
-    background-size: 100%;
-    opacity: 0.8;   
+    background-size: 100%; 
 }
 
 /* css solo per index.html */
 #carousel-container {
     padding: 0%;    /* altrimenti esce brutto */
-    height: 100%;
     width: 100%;
 
+}
+
+#crsl-img {
+    height: 93vh !important;
 }
 
 #demo {
@@ -62,14 +64,34 @@ footer {
 
 #shortcut {
     margin-left: 0%;
-    color: wheat;
-    background-color: darkgreen;
+    color: white;
+    background-color: #466c5f;
 }
 
 #block-image-container {
     padding: 2%;
     width: 50%;
 }
+
+/* sono i "link" colorati che portano alle pagine */
+
+.b-link {
+    background-color: #FDC6CA;
+}
+
+.p-link {
+    background-color: #B5FFE1;
+}
+
+.c-link {
+    background-color: #60495A;
+    color: white;
+}
+
+.f-link {
+    background-color: #FF9F1C;
+}
+    
 
 /* css solo per products.html */
 #form {
@@ -83,10 +105,26 @@ footer {
     width: 100%;
 }
 
+/* css per bio */
+
+#b-header {
+    text-align: center;
+}
+
+#b-img {
+    height: 40vh;
+    width: auto;
+}
+
+.b-text {
+    width: 80%;
+    height: 80%;
+    text-align: left;
+}
 
 /* css solo per photos.html */
 #ph-grid {
-    border: 1px solid darkgreen;
+    border: 1px solid #466c5f;
     padding: 1%;
 }
 
