@@ -2,7 +2,7 @@
 <html lang="it">
     <head>
         <meta charset="utf-8">
-        <title>Prodotti</title>
+        <title>Coltivazioni Guglielmo - Prodotti</title>
         <!-- METADATI -->
         <meta name="" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,22 +44,20 @@
 
     <!----------mostra disponibilità---------->
     <div id="text-wrapper" class="container" style="border: 0px;">
-        <select onchange="mostraProdotto(this.value)" class="form-select">
-            <option value="">Scegli un prodotto</option>
+        <select onchange="cercaProdotto(this.value)" class="form-select">
+            <option value="" disabled selected hidden >Scegli un prodotto</option>
             <option value="0">Fragole</option>
             <option value="1">Lamponi</option>
             <option value="2">Mirtilli</option>
         </select>
     </div>
     
-    <div id="text-wrapper" class="container">
-        <h1 id="prd-ttl"></h1>
+    <div id="prod-wrapper" class="container">
+        <!-- <h1 id="prd-ttl"></h1>
         <img id="prd-img" alt="prodotto">
-        <p id="prd-dsc"></p>
+        <p id="prd-dsc"></p> 
+        cosa ci dovrebbe essere dentro il tag-->
     </div>
-    
-    <br>
-    <br>
 
     <div class="b-link">
         <br>
@@ -96,14 +94,14 @@
                 <div class="col-lg" id="side-text">
                     <h3>Sottotitolo</h3>
                     <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quas fugiat quisquam rem est praesentium fugit laborum dolor. Atque deserunt inventore animi enim omnis suscipit fuga ducimus autem qui distinctio?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quas fugiat quisquam rem est praesentium fugit laborum dolor. Atque deserunt inventore animi enim omnis suscipit fuga ducimus autem qui distinctio?
                     </p>
                     <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi labore porro voluptatum sunt unde voluptas eos eveniet, cumque quia, sed velit magni non animi fugiat dolorum. Quos iste quo qui!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi labore porro voluptatum sunt unde voluptas eos eveniet, cumque quia, sed velit magni non animi fugiat dolorum. Quos iste quo qui!
                     </p>
                     <a href="contacts.html">
                     <button class="btn" id="shortcut">
-                    Come trovarci <img src="img/svg/arrow.svg" height="20px" width="20px">
+                        Come trovarci <img src="img/svg/arrow.svg" height="20px" width="20px">
                     </button>
                     </a>
                 </div>
@@ -173,6 +171,6 @@
 
     </script>
 
-    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>

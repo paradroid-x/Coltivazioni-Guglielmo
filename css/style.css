@@ -7,7 +7,7 @@ body {
 #nav {
     background-color: #466c5f !important;
     color: white !important;  
-    height: 7vh !important;
+    height: auto;
 }
 
 #nav-brand {
@@ -40,7 +40,6 @@ body {
 footer {
     background-color: #466c5f;
     color: white;
-    background-image: url(img\pattern.jpg);
     background-repeat: repeat;
     background-position: left top;
     background-size: 100%; 
@@ -49,12 +48,12 @@ footer {
 /* css solo per index.html */
 #carousel-container {
     padding: 0%;    /* altrimenti esce brutto */
-    width: 100%;
+    /*width: 100%;*/
 
 }
 
 #crsl-img {
-    height: 93vh !important;
+    height: auto;
 }
 
 #demo {
@@ -73,25 +72,6 @@ footer {
     width: 50%;
 }
 
-/* sono i "link" colorati che portano alle pagine */
-
-.b-link {
-    background-color: #FDC6CA;
-}
-
-.p-link {
-    background-color: #B5FFE1;
-}
-
-.c-link {
-    background-color: #60495A;
-    color: white;
-}
-
-.f-link {
-    background-color: #FF9F1C;
-}
-    
 
 /* css solo per products.html */
 #form {
@@ -100,9 +80,22 @@ footer {
     margin-right: auto;
 }
 
+#prod-wrapper {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: flex-start;
+}
+
 #prd-img {
     height: auto;
     width: 100%;
+}
+
+#prd-price {
+    margin-top: 15px;
+    padding: 1%;
 }
 
 /* css per bio */
@@ -123,18 +116,14 @@ footer {
 }
 
 /* css solo per photos.html */
-#ph-grid {
-    border: 1px solid #466c5f;
-    padding: 1%;
-}
-
 #ph-block{
-    margin-left: 0%;
+    margin: 0.5%;
     padding: 0%;
-    height: 30%;
-    width: 30%;
 }
 
+.ph {
+    width: 100%;   
+}
 
 
 

@@ -1,0 +1,9 @@
+
+{"products": [
+    
+    {"type": "Fragole", "quantity": "42", "price": "12€", "descr": "abcdef"},
+    {"type": "Lamponi", "quantity": "0", "price": "", "descr": ""},
+    {"type": "Mirtilli", "quantity": "37", "price": "", "descr": ""},
+    {"type": "", "quantity": "", "price": "€", "descr": ""}
+
+]}
