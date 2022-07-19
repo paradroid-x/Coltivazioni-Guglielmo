@@ -14,15 +14,21 @@
 
     </head>
 
-    <!-- GOOGLE MAPS API -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-
     <!-- MICRODATI -->
     <script type="application/ld+json">
-
+      {
+        "@context": "https://schema.org", 
+        "@type": "Agricultural Business",
+        "name": "Azienda Agricola Guglielmo",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Badalasco",
+          "addressRegion": "Lombardia",
+          "streetAddress": ""
+        }
+        "description": "Antica azienda agricola della famiglia Guglielmo specializzata in vendita di frutti di boschi e erbe aromatiche",
+        "telephone": ""
+      }
     </script>
 
     <body>
@@ -30,8 +36,7 @@
       <header>
         <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
             <a id="nav-brand" class="navbar-brand" href="index.html">
-                <img src="img/logo/logo_1.jpg" width="30" height="30" id="logo" alt="logo">    <!-- il logo va messo apposto con le dimensioni giuste-->
-                Coltivazioni Guglielmo
+              <img src="img/logo/better_logo.png" width="170" height="50" id="logo" alt="logo">    <!-- il logo va messo apposto con le dimensioni giuste-->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +47,6 @@
                 <a class="nav-item nav-link" id="nav-link" href="bio.html">Chi siamo</a>
                 <a class="nav-item nav-link" id="nav-link" href="products.html">Prodotti</a>
                 <a class="nav-item nav-link disabled" id="nav-link" href="#">Contatti</a>
-                <a class="nav-item nav-link" id="nav-link" href="photos.html">Foto</a>
               </div>
             </div>
         </nav>
@@ -57,36 +61,16 @@
         <h1>API DI GOOGLE MAPS</h1>
       </div>
 
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4908736370385!2d9.233282592090985!3d45.47662183469832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c72309e61339%3A0xd3570047d993c3da!2sVia%20Celoria%2018%20Headquarter%20-%20University%20of%20Milan!5e0!3m2!1sit!2sit!4v1658236769064!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
       <div class="container" id="text-wrapper">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia reiciendis, repellendus sequi illum ipsa earum voluptates velit unde necessitatibus vero culpa facere repudiandae consectetur voluptas, esse fugiat soluta error quas!
       </div>
 
-      <footer>
-        <div class="container">
-          <br>
-          <div>
-            <div class="container">
-              <h4>Coltivazioni Guglielmo</h4>
-            </div>
-            <br>
-            <br>
-            <div>
-              <a href="" id="cnt"><img src="img/svg/maps_icon.svg" width="25px" height="25px"> </a><br>
-              <img src="img/svg/tel_icon.svg" width="23px" height="23px"> (+39) 123 456 7890<br>
-              <img src="img/svg/mail_icon.svg" width="23px" height="17px"> agricola.guglielmo@gmail.com<br>
-            </div>
-          </div>
-          <br>
-          <div>
-            <a href="https://it-it.facebook.com/piccolifrutti.bg" id="cnt"><img src="img/svg/fb_icon.svg" width="20px" height="20px"> Facebook</a><br>
-            <a href="https://www.instagram.com/coltivazioniguglielmo/" id="cnt"><img src="img/svg/insta_icon.svg" width="20px" height="20px"> Instagram</a><br>
-          </div>
-          <br>
-          <br>
-        </div>
-      </footer>
-
     </body>
-    <script src="js/API.js"></script>
+     <!-- GOOGLE MAPS API -->
+    <script src="./js/API.js"></script>
+    <!-- api key: AIzaSyDVWEfzEKrVEONvpULCfpXJUuI2Yd4ZSBI-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap&libraries=&v=weekly"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>

@@ -1,16 +1,18 @@
 let check = 0; //serve per vedere se ho già impostato il layout o no
-
+let db = 0; //serve per vedere se ho già caricato il db o no
+let data;
 let meth = new Headers({
     method: 'get'
 });
 
 async function cercaProdotto(nprod){
-
-    let data = await fetch("http://localhost:8080/?pnumber=" + nprod, meth)
-                     .then((data) => {return data.json();})
-                     .catch((err) => {console.log(err);});
-              
-    console.log(data);
+    //questo if serve per caricare il database SOLO ESCLUSIVAMENTE la prima volta che si ha un eveto di tipo change
+    if(db == 0){
+        data = await fetch("http://localhost:8080/?pnumber=" + nprod, meth)
+                    .then((data) => {return data.json();})
+                    .catch((err) => {console.log(err);});
+        db = 1;    
+    }
     mostraProdotto(nprod, data);
 }
 
@@ -33,8 +35,9 @@ function mostraProdotto(prod, res){
     title.innerHTML = res.products[prod].type;
     image.src = "img/products/img" + i + ".jpg"; // non uso ww o altro perchè è un singolo url 
     if(res.products[prod].quantity == "0"){ //se non disponibili
-        descr.innerHTML = "NON DISPONIBILE";
+        title.innerHTML = res.products[prod].type + "<b>NON DISPONIBILE</b>"; 
         price.innerHTML = "--€";
+        descr.innerHTML = "<b>" + res.products[prod].type + ":</b>" + "<br>" + res.products[prod].descr;
     } else {
         price.innerHTML = "<b>" + res.products[prod].price + "</b>/kg";
         descr.innerHTML = "<b>" + res.products[prod].type + ":</b>" + "<br>" + res.products[prod].descr;

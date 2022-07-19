@@ -12,7 +12,19 @@
     </head>
     <!-- MICRODATI -->
     <script type="application/ld+json">
-
+      {
+        "@context": "https://schema.org",
+        "@type": "Agricultural Business",
+        "name": "Azienda Agricola Guglielmo",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Badalasco",
+          "addressRegion": "Lombardia",
+          "streetAddress": ""
+        }
+        "description": "Antica azienda agricola della famiglia Guglielmo specializzata in vendita di frutti di boschi e erbe aromatiche",
+        "telephone": ""
+      }
     </script>
 
     <body>
@@ -21,8 +33,7 @@
       <header>
         <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
             <a id="nav-brand" class="navbar-brand" href="#">
-                <img src="img/logo/better_logo.jpg" width="165" height="45" id="logo" alt="logo">    <!-- il logo va messo apposto con le dimensioni giuste-->
-                <!-- Coltivazioni Guglielmo -->
+              <img src="img/logo/better_logo.png" width="170" height="50" id="logo" alt="logo">    <!-- il logo va messo apposto con le dimensioni giuste-->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,14 +44,13 @@
                 <a class="nav-item nav-link" id="nav-link" href="bio.html">Chi siamo</a>
                 <a class="nav-item nav-link" id="nav-link" href="products.html">Prodotti</a>
                 <a class="nav-item nav-link" id="nav-link" href="contacts.html">Contatti</a>
-                <a class="nav-item nav-link" id="nav-link" href="photos.html">Foto</a>
               </div>
             </div>
         </nav>
       </header>
 
       <!----------CAROUSEL---------->
-      <div class="container" >
+      <div class="container" id = "crsl">
         <div id = "demo" class="carousel slide" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
@@ -85,10 +95,9 @@
 
         <!----------Links---------->
 
-        <div class="b-link">
+        <div class="container">
           <br>
-          <br>
-          <div class="container">
+          <div class="p-link">
             <div id="text-wrapper" class="row">
               <div class="col-lg">
                 <img src="img/img1.jpg" alt="immagine" class="img-fluid">
@@ -114,14 +123,12 @@
             </div>
           </div>
           <br>
-          <br>
         </div>
 
 
-        <div class="p-link">
+        <div class="container">
           <br>
-          <br>
-          <div class="container">
+          <div class="p-link">
             <div id="text-wrapper" class="row">
               <div class="col-lg" id="side-text">
                 <h3>Sottotitolo</h3>
@@ -148,15 +155,11 @@
             </div>
           </div>
           <br>
-          <br>
         </div>
 
-        <div class="c-link">
+        <div class="container">
           <br>
-          <br>
-          <br>
-          <br>
-          <div class="container">
+          <div class="p-link">
             <div id="text-wrapper" class="row">
               <div class="col-lg">
                 <img src="img/img1.jpg" alt="immagine" class="img-fluid">
@@ -181,40 +184,6 @@
             
             </div>
           </div>
-          <br>
-          <br>
-        </div>
-
-        <div class="f-link">
-          <br>
-          <br>
-          <div class="container">
-            <div id="text-wrapper" class="row">
-              <div class="col-lg" id="side-text">
-                <h3>Sottotitolo</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quas fugiat quisquam rem est praesentium fugit laborum dolor. Atque deserunt inventore animi enim omnis suscipit fuga ducimus autem qui distinctio?
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi labore porro voluptatum sunt unde voluptas eos eveniet, cumque quia, sed velit magni non animi fugiat dolorum. Quos iste quo qui!
-                </p>
-                <a href="photos.html">
-                  <button class="btn" id="shortcut">
-                    Guarda le foto <img src="img/svg/arrow.svg" height="20px" width="20px">
-                  </button>
-                </a>
-              </div>
-              
-              <br>
-    
-              <div class="col-lg">
-                <br>
-                <img src="img/img3.jpg" alt="immagine" class="img-fluid">
-              </div>
-            
-            </div>
-          </div>
-          <br>
           <br>
         </div>
 

@@ -17,4 +17,4 @@ function initMap() {
       position: loc,
       map: map,
     });
-  }
+}
